@@ -1,0 +1,43 @@
+.project {
+	&__wrapper {
+		margin: auto;
+		max-width: 1392px;
+		max-height: 1779px;
+		background-color: #f6f7ff;
+		border-radius: 0 0 16px 16px;
+	}
+
+	&__slogan {
+	}
+
+	&__title {
+		color: $black;
+	}
+	&__inner {
+		display: flex;
+		padding-top: 108px;
+		padding-bottom: 122px;
+		flex-direction: column;
+		align-items: center;
+	}
+	&-bg {
+		position: relative;
+		z-index: -1;
+	}
+	&-bg::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 2328.28px;
+		width: 2328.28px;
+		background: -o-linear-gradient(306.85deg, #6202ff 8.37%, rgba(97, 0, 255, 0) 65.08%);
+		background: linear-gradient(143.15deg, #6202ff 8.37%, rgba(97, 0, 255, 0) 65.08%);
+		top: -800px;
+		left: 52%;
+		transform: translateX(-50%);
+		-webkit-filter: blur(100px);
+		filter: blur(424px);
+		transform: matrix(0.73, 0.72, -0.66, 0.72, 0, 0);
+		-webkit-transform: translateX(-50%);
+	}
+}

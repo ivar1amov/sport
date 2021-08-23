@@ -1,0 +1,111 @@
+.work {
+	position: relative;
+	padding-top: 96px;
+	padding-bottom: 116px;
+	&__wrapper {
+		margin: auto;
+		max-width: 1392px;
+		max-height: 1779px;
+		background-color: #f6f7ff;
+		border-radius: 16px;
+		-webkit-border-radius: 16px;
+		-moz-border-radius: 16px;
+		-ms-border-radius: 16px;
+		-o-border-radius: 16px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 64px 0 127px;
+		position: relative;
+	}
+
+	&__slogan {
+		padding-bottom: 6px;
+	}
+
+	&__title {
+		padding-bottom: 16px;
+		color: $black;
+	}
+
+	&__subtitle {
+		max-width: 835px;
+		padding-bottom: 16px;
+	}
+
+	&__chart {
+		padding-bottom: 127px;
+	}
+
+	&__graph {
+	}
+	&__chart-subtitle {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.08;
+		color: $accent;
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+	&__text::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 247.56px;
+		width: 165px;
+		background-image: url(../img/icons/work/player-icon.png);
+		top: 45px;
+		right: 41px;
+	}
+}
+.card {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 120px;
+	}
+
+	&__item {
+		max-width: 287px;
+		min-height: 236px;
+		padding-bottom: 30px;
+	}
+	&__item + &__item {
+		margin-left: 124px;
+	}
+	&__item:nth-child(1) {
+		margin-left: 0;
+	}
+	&__item:nth-child(4) {
+		margin-left: 0;
+	}
+
+	&__icon {
+		padding-bottom: 16px;
+	}
+
+	&__slogan {
+		padding-bottom: 8px;
+		font-family: "IBM Plex Mono", sans-serif;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 1.67;
+		color: $workTextColor;
+	}
+
+	&__title {
+		padding-bottom: 8px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.2;
+		color: $black;
+	}
+}

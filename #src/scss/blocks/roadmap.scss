@@ -1,0 +1,107 @@
+.roadmap {
+	&__inner {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		padding-bottom: 156px;
+	}
+	&__inner::after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 2px;
+		max-width: 100%;
+		background: linear-gradient(
+			90deg,
+			#303b6f 5.07%,
+			rgba(48, 59, 111, 0.401042) 83.68%,
+			rgba(48, 59, 111, 0) 100%
+		);
+		top: 172px;
+		bottom: 150px;
+		z-index: -1;
+	}
+
+	&__slogan {
+		padding-top: 74px;
+		padding-bottom: 8px;
+	}
+
+	&__title {
+		padding-bottom: 100px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	&__item + &__item {
+		margin-top: 115px;
+	}
+	&__item:nth-child(even) {
+		flex-direction: row-reverse;
+		.roadmap__data {
+			margin-left: 38px;
+			text-align: left;
+		}
+		.roadmap__text {
+			margin-right: 38px;
+		}
+	}
+	&__item::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 12px;
+		width: 12px;
+		max-width: 100%;
+		background-image: url(../img/icons/dot.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__data {
+		margin-right: 38px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 1.2;
+		width: 357px;
+		text-align: right;
+	}
+
+	&__text {
+		max-width: 357px;
+		margin-left: 38px;
+		padding: 20px;
+		background: #23174f;
+		box-shadow: 0px 44px 56px rgba(29, 5, 74, 0.4);
+		border-radius: 16px;
+	}
+
+	&__text-list {
+		display: flex;
+		list-style: inside;
+		flex-direction: column;
+	}
+
+	&__text-item {
+		list-style: inside;
+		line-height: 1.62;
+		color: #9ca3c4;
+	}
+	&__desc {
+		padding-bottom: 144px;
+	}
+}

@@ -1,0 +1,48 @@
+.risk {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		max-width: 605px;
+		margin-left: 95px;
+		padding-bottom: 163px;
+		padding-top: 221px;
+	}
+
+	&__slogan {
+		padding-bottom: 8px;
+	}
+
+	&__title {
+		padding-bottom: 40px;
+		color: $black;
+	}
+
+	&__subtitle {
+		padding-bottom: 48px;
+		font-family: "IBM Plex Mono", sans-serif;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 1.39;
+		color: $black;
+	}
+	&__wrapper {
+		margin: auto;
+		max-width: 1392px;
+		max-height: 900px;
+		background-color: #f6f7ff;
+		border-radius: 16px 16px 0 0;
+	}
+}
+.logo {
+	&__icon {
+	}
+}
+
+.slider {
+	padding-top: 176px;
+}

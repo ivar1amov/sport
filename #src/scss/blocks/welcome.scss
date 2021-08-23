@@ -1,0 +1,216 @@
+.welcome {
+	padding-top: 220px;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		max-width: 1100px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-family: "IBM Plex Mono", sans-serif;
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 1.2;
+		text-align: center;
+	}
+	&__title span {
+		position: relative;
+		padding-left: 10px;
+	}
+	&__title span:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 91px;
+		width: 190px;
+		background-image: url(../img/outline/first.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-repeat: no-repeat;
+		top: -9px;
+		right: -43px;
+	}
+	&__token {
+	}
+
+	&__subtitle {
+		padding-top: 65px;
+		padding-bottom: 31px;
+		max-width: 764px;
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: center;
+		color: $primaryColor;
+		margin: 0 auto;
+	}
+}
+
+.token {
+	&__buy-link {
+		display: inline-block;
+		position: relative;
+		border-radius: 8px;
+		background: $secondaryColor;
+		padding: 12px 50px 12px 32px;
+		color: $black;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 1.3;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		-ms-border-radius: 8px;
+		-o-border-radius: 8px;
+	}
+
+	&__buy-link::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 16px;
+		width: 16px;
+		background-image: url(../img/icons/arrow-icon.svg);
+		top: 14px;
+		right: 32px;
+	}
+
+	&__whitepaper-link {
+		display: inline-block;
+		border-radius: 8px;
+		padding: 12px 32px;
+		margin: 24px;
+		border: 1px solid $secondaryColor;
+		color: $secondaryColor;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 1.3;
+	}
+}
+.welcome {
+	&__content {
+		position: relative;
+		padding-top: 466px;
+	}
+	&-bg::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 1700px;
+		width: 1700px;
+		background: -o-linear-gradient(306.85deg, #6202ff 8.37%, rgba(97, 0, 255, 0) 65.08%);
+		background: linear-gradient(143.15deg, #6202ff 8.37%, rgba(97, 0, 255, 0) 65.08%);
+		top: 10%;
+		left: 70%;
+		transform: translateX(-50%);
+		filter: blur(100px);
+		//424px:;
+		transform: matrix(0.73, 0.72, -0.66, 0.72, 0, 0);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		-webkit-filter: blur(100px);
+	}
+	&__list {
+		z-index: 2;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		padding: 56px 65px 56px 128px;
+		background: #23174f;
+		box-shadow: 0px 44px 56px rgba(29, 5, 74, 0.4);
+		border-radius: 16px;
+		-webkit-border-radius: 16px;
+		-moz-border-radius: 16px;
+		-ms-border-radius: 16px;
+		-o-border-radius: 16px;
+	}
+
+	&__list-item {
+		max-width: 228px;
+	}
+	&__list-item + &__list-item {
+		margin-left: 117px;
+	}
+	&-text {
+		padding-top: 120px;
+		max-width: 780px;
+		margin: auto;
+		font-family: "IBM Plex Mono", sans-serif;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 1.2;
+		position: relative;
+		z-index: 3;
+		text-align: center;
+	}
+	&-slogan {
+		padding-top: 32px;
+		margin: auto;
+		max-width: 317px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 1.2;
+		color: $primaryColor;
+	}
+
+	&__list-title {
+		position: relative;
+		padding-bottom: 8px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.2;
+	}
+
+	&__list-title--ball:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 32px;
+		width: 32px;
+		background-image: url(../img/icons/welcome/ball-icon.svg);
+		top: 0px;
+		left: -62px;
+	}
+
+	&__list-title--coin:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 32px;
+		width: 32px;
+		background-image: url(../img/icons/welcome/coin-icon.svg);
+		top: 0px;
+		left: -62px;
+	}
+
+	&__list-title--shop:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 32px;
+		width: 32px;
+		background-image: url(../img/icons/welcome/shop-icon.svg);
+		top: 0px;
+		left: -62px;
+	}
+
+	&__list-subtitle {
+		color: $primaryColor;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.6;
+	}
+	&-img {
+		right: 50%;
+		left: 50%;
+		transform: translate(-43%, -101%);
+		position: absolute;
+		z-index: 1;
+		-webkit-transform: translate(-43%, -101%);
+		-moz-transform: translate(-43%, -101%);
+		-ms-transform: translate(-43%, -101%);
+		-o-transform: translate(-43%, -101%);
+	}
+}

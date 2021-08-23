@@ -1,0 +1,49 @@
+.sit {
+	padding-bottom: 310px;
+	display: flex;
+	justify-content: flex-nd;
+	&__wraper {
+		display: flex;
+	}
+	&__inner {
+		max-width: 51.1%;
+		display: flex;
+		flex-direction: column;
+	}
+	&__token {
+		width: 100%;
+		background-image: url(../img/sit/token.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: contain;
+	}
+
+	&__slogan {
+		padding-bottom: 8px;
+	}
+	&__title {
+		padding-bottom: 16px;
+	}
+
+	&__subtitle {
+		line-height: 1.63;
+		color: $primaryColor;
+	}
+	&__subtitle + &__subtitle {
+		padding-bottom: 40px;
+	}
+
+	&__text {
+		padding-bottom: 24px;
+		font-family: "IBM Plex Mono", sans-serif;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 1.4;
+	}
+
+	&__desc {
+		margin-bottom: 32px;
+		line-height: 1.63;
+		color: $primaryColor;
+	}
+}

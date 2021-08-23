@@ -1,0 +1,115 @@
+/* ========== FOOTER ========== */
+
+.footer {
+	color: $primaryColor;
+	font-size: 14px;
+	line-height: 1.71;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__wrapper {
+		display: flex;
+		padding-right: 65px;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__subtitle {
+		max-width: 220px;
+		padding: 24px 0;
+	}
+	&__title {
+		color: #fff;
+	}
+
+	&__top {
+		padding-bottom: 124px;
+	}
+}
+
+.logo {
+	&__link {
+	}
+
+	&__icon {
+	}
+}
+.social {
+	&__list {
+		display: flex;
+	}
+
+	&__list-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__item-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		background-color: rgba(244, 245, 247, 0.1);
+		border-radius: 50%;
+		transition: color 0.1s linear;
+		-webkit-transition: color 0.1s linear;
+		-moz-transition: color 0.1s linear;
+		-ms-transition: color 0.1s linear;
+		-o-transition: color 0.1s linear;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+	}
+	&__list-item + &__list-item {
+		padding-left: 16px;
+	}
+
+	&__item-icon {
+		display: block;
+	}
+}
+
+.map {
+	padding-top: 24px;
+	&__item:nth-child(2) {
+		padding: 12px 0;
+	}
+
+	&__item-link {
+		color: $primaryColor;
+	}
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	padding-left: 172px;
+}
+.contact-title {
+	color: #fff;
+}
+.contact-link {
+	padding-top: 24px;
+	margin-left: 32px;
+	position: relative;
+}
+.contact-link::after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	background-image: url(../img/icons/e-mail.svg);
+	top: 24px;
+	left: -32px;
+}
+
+.copyright {
+	padding: 30px 0;
+}
